@@ -1,0 +1,22 @@
+cc_test {
+    name: "sample-unit-tests",
+
+    cflags: [
+        "-fstack-protector-all",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fno-builtin",
+    ],
+
+    srcs: [
+        "test.cpp",
+    ],
+
+    shared_libs: [
+        "libcutils",
+        "libbase",
+    ],
+    static_libs: ["liblog"],
+}

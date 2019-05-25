@@ -35,6 +35,17 @@
         },
         {
             "type": "shell",
+            "label": "ninja build android native armv7a",
+            "command": "D:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+            "args": [
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\build"
+            },
+            "group": "build"
+        },
+        {
+            "type": "shell",
             "label": "build android native armv7a",
             "command": "D:\\Android\\sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\armv7a-linux-androideabi28-clang++.cmd",
             "args": [
@@ -46,17 +57,6 @@
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
-            },
-            "group": "build"
-        },
-        {
-            "type": "shell",
-            "label": "ninja build android native armv7a",
-            "command": "D:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
-            "args": [
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}\\build"
             },
             "group": "build"
         }
