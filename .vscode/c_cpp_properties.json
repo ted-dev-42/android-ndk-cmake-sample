@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "android",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "D:\\Android\\sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\armv7a-linux-androideabi28-clang++.cmd"
+        }
+    ],
+    "version": 4
+}
