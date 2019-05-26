@@ -1,28 +1,29 @@
 {
+
+    "options": {
+        "env": {
+            "sdk-root": "C:\\android\\sdk",
+            "ndk-root": "C:\\Android\\sdk\\ndk-bundle"
+        }
+    },
     "tasks": [
         {
             "type": "shell",
             "label": "cmake android native armv7a",
-            "command": "D:\\android\\sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
+            "command": "C:\\android\\sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
             "args": [
-                "-H${workspaceFolder}",
-                "-B${workspaceFolder}",
                 "-DANDROID_ABI=armeabi-v7a",
                 "-DANDROID_PLATFORM=android-19",
-                "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=${workspaceFolder}",
                 "-DCMAKE_BUILD_TYPE=Debug",
-                "-DANDROID_NDK=D:\\Android\\sdk\\ndk-bundle",
+                "-DANDROID_NDK=C:\\Android\\sdk\\ndk-bundle",
                 "-DCMAKE_CXX_FLAGS=-Wall -Werror",
                 "-DCMAKE_SYSTEM_NAME=Android",
                 "-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a",
                 "-DCMAKE_SYSTEM_VERSION=27",
                 "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
-                "-DCMAKE_ANDROID_NDK=D:\\Android\\sdk\\ndk-bundle",
-                "-DCMAKE_CXX_COMPILER=D:\\Android\\sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe",
-                "-DCMAKE_TOOLCHAIN_FILE=D:\\Android\\sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
-                "-G",
-                "Ninja",
-                "-DCMAKE_MAKE_PROGRAM=D:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+                "-DCMAKE_ANDROID_NDK=C:\\Android\\sdk\\ndk-bundle",
+                "-DCMAKE_TOOLCHAIN_FILE=C:\\Android\\sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake",
+                "-GNinja",
                 "${workspaceFolder}"
             ],
             "options": {
@@ -31,34 +32,42 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
+            },
+            "presentation": {
+                "clear": true
             }
         },
         {
             "type": "shell",
             "label": "ninja build android native armv7a",
-            "command": "D:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
-            "args": [
-            ],
+            "command": "C:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+            "args": [],
             "options": {
                 "cwd": "${workspaceFolder}\\build"
             },
-            "group": "build"
+            "group": "build",
+            "presentation": {
+                "clear": true
+            }
         },
         {
             "type": "shell",
             "label": "build android native armv7a",
-            "command": "D:\\Android\\sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\armv7a-linux-androideabi28-clang++.cmd",
+            "command": "C:\\Android\\sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\armv7a-linux-androideabi28-clang++.cmd",
             "args": [
                 "-static-libstdc++",
                 "-g",
                 "-o",
-                "sample",
-                "main.cpp"
+                "math",
+                "math.cpp"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "group": "build"
+            "group": "build",
+            "presentation": {
+                "clear": true
+            }
         }
     ],
     "version": "2.0.0"

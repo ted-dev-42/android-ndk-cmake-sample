@@ -4,7 +4,7 @@
             "name": "android",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/Android/sdk/ndk-bundle/sources/third_party/googletest/include"
+                "C:/Android/sdk/ndk-bundle/sources/third_party/googletest/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -12,7 +12,7 @@
                 "_UNICODE"
             ],
             "intelliSenseMode": "clang-x64",
-            "compilerPath": "D:/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/armv7a-linux-androideabi28-clang++.cmd"
+            "compilerPath": "C:/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/armv7a-linux-androideabi28-clang++.cmd"
         }
     ],
     "version": 4

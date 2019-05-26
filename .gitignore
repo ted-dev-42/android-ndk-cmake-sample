@@ -1,5 +1,5 @@
 .vscode/ipch
-build
-/sample
+/build
+/lib
 *.pyc
 *.o

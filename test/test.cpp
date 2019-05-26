@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "../main.cpp"
+#include "../math.h"
 
 TEST(SampleTest, Add){
     EXPECT_EQ(5, add(3, 2));
